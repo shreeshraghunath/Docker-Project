@@ -13,5 +13,12 @@ pipeline {
                 sh 'docker images'
             }
         }
+         stage('Push the docker image') {
+            steps {
+                sh 'docker push shreeshraghunath/spring-petclinic-987'
+                sh 'docker images'
+            }
+        }
     }
+    
 }
