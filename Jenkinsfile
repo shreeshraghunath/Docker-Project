@@ -9,7 +9,7 @@ pipeline {
         }
          stage('Build the docker image') {
             steps {
-                sh 'docker build -t 'shreeshraghunath/spring-petclinic-987 . '
+                sh 'docker build -t shreeshraghunath/spring-petclinic-987 . '
                 sh 'docker images'
             }
         }
