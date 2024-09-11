@@ -11,9 +11,9 @@ phases:
        - mvn clean install -Dskiptests
       # - command
   post_build:
-     commands:
+     commands: 
         - echo "transfer the artifact..."
-        - aws s3 cp target/*.jar s3://MyFirstCodebuild
+        - aws s3 cp target/*.jar s3://MyFirstCodebuild/ --recursive
       # - command
 artifacts:
   files:
